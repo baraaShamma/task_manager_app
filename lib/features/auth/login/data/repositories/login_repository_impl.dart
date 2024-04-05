@@ -6,7 +6,7 @@ import 'package:task_manager_app/resources/error/exceptions.dart';
 import 'package:task_manager_app/resources/error/failures.dart';
 import 'package:task_manager_app/resources/network/network_info.dart';
 
-typedef LoginPost = Future<Unit> Function();
+typedef LoginTask = Future<Unit> Function();
 
 
 class LoginRepositoryImpl implements LoginRepository {
@@ -26,10 +26,10 @@ class LoginRepositoryImpl implements LoginRepository {
   }
 
   Future<Either<Failure, Unit>> _getMessage(
-      LoginPost loginPost) async {
+      LoginTask loginTask) async {
     if (await networkInfo.isConnected) {
       try {
-        await loginPost();
+        await loginTask();
         return const Right(unit);
       }
       on WrongDataFailureException{
