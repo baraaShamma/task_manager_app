@@ -1,16 +1,8 @@
 # task_manager_app
+The application was designed based on a clean code mechanism, and the code was divided into three main folders, which are:
+app contains the main files in the project
+resources and contains general files that can be used in any project
+features and contains project services, meaning each service will have its own folder containing three layers, which are data, domain, and presentation
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The project is ready in all respects
+But I did not do unit testing
